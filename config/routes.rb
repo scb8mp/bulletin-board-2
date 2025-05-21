@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-   root to: "home#index"
+  devise_for :users
+   root "boards#index"
    #get("/", { :controller => "boards", :action => "index" })
 
   # Routes for the Post resource:
